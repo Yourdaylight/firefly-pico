@@ -36,7 +36,7 @@ export const useAppStore = defineStore('app', {
 
   actions: {
     async fetchLatestAppVersion() {
-      let response = await new InfoRepository().getLatestVersion()
+      let response = await new InfoRepository(this.picoBackendURL).getLatestVersion()
       if (!ResponseUtils.isSuccess(response)) {
         return
       }

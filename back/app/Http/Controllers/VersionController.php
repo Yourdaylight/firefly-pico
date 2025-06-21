@@ -13,8 +13,10 @@ class VersionController extends BaseController
 {
 
 
-    public function getLatestVersion(Request $request)
+    public function getLatestVersion(Request $request): mixed
     {
+        //直接返回字符串1.7.1
+        return '1.7.1';
         $url = 'https://hub.docker.com/v2/repositories/cioraneanu/firefly-pico/tags?page_size=1000';
         $response = Http::get($url);
         if (!$response->successful()) {

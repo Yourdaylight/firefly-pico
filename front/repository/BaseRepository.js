@@ -7,9 +7,8 @@ class BaseRepository {
     this.getAll = this.getAll.bind(this)
   }
 
-  getUrl() {
-    const appStore = useAppStore()
-    return `${appStore.picoBackendURL}/${this.endpoint}`
+  getUrl(baseURL = '') {
+    return `${baseURL}/${this.endpoint}`
   }
 
   async getOne(id) {
