@@ -1,0 +1,32 @@
+{
+  "name": "firefly-uniapp",
+  "version": "1.0.0",
+  "description": "Firefly Pico UniApp version",
+  "main": "main.js",
+  "scripts": {
+    "dev:h5": "uni -p h5",
+    "build:h5": "uni build -p h5",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^3.0.0",
+    "@dcloudio/uni-ui": "^1.4.20",
+    "date-fns": "^2.29.3",
+    "lodash": "^4.17.21",
+    "vue": "^3.2.47",
+    "vue-i18n": "^9.2.2",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.0.0",
+    "@dcloudio/uni-cli-shared": "^3.0.0",
+    "@dcloudio/vite-plugin-uni": "^3.0.0",
+    "@vue/compiler-sfc": "^3.2.47",
+    "eslint": "^8.33.0",
+    "sass": "^1.58.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.0"
+  }
+}
